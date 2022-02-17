@@ -22,5 +22,8 @@ export default {
 };
 </script>
 <style lang="scss">
-
+#resume {
+  max-width: 794px; // A4
+  margin: 0 auto;
+}
 </style>

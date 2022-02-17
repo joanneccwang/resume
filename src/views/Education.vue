@@ -1,5 +1,7 @@
 <template>
-  <div id="education"></div>
+  <div id="education">
+    <block-title>Education</block-title>
+  </div>
 
 </template>
 

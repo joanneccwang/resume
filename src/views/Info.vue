@@ -30,11 +30,11 @@ export default {
   justify-content: center;
 
   #basic_name {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 800;
   }
   #basic_position {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 600;
     margin-top: 10px;
   }
@@ -46,7 +46,7 @@ export default {
   align-items: center;
   justify-content: center;
 
-  font-size: 16px;
+  font-size: 14px;
   .contact {
     margin: 0px 20px;
   }
