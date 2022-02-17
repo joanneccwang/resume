@@ -5,12 +5,12 @@
       <div id="basic_position">FRONT-END DEVELOPER</div>
     </div>
     <div id="info_contacts">
-      <div id="contact_phone">0932-527712</div>
-      <div id="contact_mail">joanneccwang@gmail.com</div>
-      <div id="contact_base">Taiwan</div>
-      <div id="contact_linkedin">https://www.linkedin.com/in/joannewang7/</div>
-      <div id="contact_github">https://github.com/joanneccwang</div>
-      <div id="contact_codepen">https://codepen.io/joanneccwang</div>
+      <div class="contact" id="contact_phone">PHONE: 0932-527712</div>
+      <div class="contact" id="contact_mail">MAIL: joanneccwang@gmail.com</div>
+      <div class="contact" id="contact_base">BASE: Taiwan</div>
+      <div class="contact" id="contact_linkedin">LINKEDIN: https://www.linkedin.com/in/joannewang7/</div>
+      <div class="contact" id="contact_github">GITHUB: https://github.com/joanneccwang</div>
+      <div class="contact" id="contact_codepen">CODEPEN: https://codepen.io/joanneccwang</div>
     </div>
   </div>
 </template>
@@ -21,6 +21,34 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+#info_basic {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
+  #basic_name {
+    font-size: 30px;
+    font-weight: 800;
+  }
+  #basic_position {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+}
+#info_contacts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+  .contact {
+    margin: 0px 20px;
+  }
+}
 </style>
