@@ -1,6 +1,6 @@
 <template>
   <div id="experience">
-    <block-title>Experience</block-title>
+    <block-title>EXPERIENCE</block-title>
     <div class="experience_company">Emotibot</div>
     <div class="experience_time">Dec 2017 - Nov 2021</div>
     <div class="experience_content">
