@@ -36,8 +36,10 @@ export default {
     }
 
     .degree_school {
-      font-weight: bold;
-      font-size: 18px;
+      @include title;
+    }
+    .degree_degree {
+      margin-top: 5px;
     }
     .degree-year {
       color: #666;

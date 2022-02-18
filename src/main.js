@@ -1,6 +1,7 @@
 import { createApp } from 'vue';
-import Title from '@/components/Title.vue';
+// import '@/assets/scss/variable.scss';
 
+import Title from '@/components/Title.vue';
 import App from './App.vue';
 
 // import router from './router';

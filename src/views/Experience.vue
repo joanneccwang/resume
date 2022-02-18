@@ -1,8 +1,10 @@
 <template>
   <div id="experience">
     <block-title>EXPERIENCE</block-title>
-    <div class="experience_company">Emotibot</div>
-    <div class="experience_time">Dec 2017 - Nov 2021</div>
+    <div class="experience_company">
+      <div class="experience_company-name">Emotibot Technologies Limited</div>
+      <div class="experience_time">Dec 2017 - Nov 2021</div>
+    </div>
     <div class="experience_content">
       <ul>
         <li>Work closely with designers and project managers to build product from scratch to completion</li>
@@ -12,7 +14,10 @@
 
       Products involved:
       <div class="product">
-        1. AI Customer Service Bots (2020.11 - 2021.11)
+        <div class="product_info">
+          <div class="product_name">1. AI Customer Service Bots</div>
+          <div class="product_time">2020.11 - 2021.11</div>
+        </div>
         <p>
           AI Chatbots for answering common customer question which also allow human customer service to take action when customer's questions are out of robot's scope.
         </p>
@@ -23,7 +28,10 @@
         </ul>
       </div>
       <div class="product">
-        2. Voice Platform (2021.01 - 2021.11)
+        <div class="product_info">
+          <div class="product_name">2. Voice Platform </div>
+          <div class="product_time">2021.01 - 2021.11</div>
+        </div>
         <p>
           A system that allows users to train and test models for ASR(Automatic Speech Recognition) and TTS(Text To Speech) techniques.
         </p>
@@ -33,7 +41,10 @@
         </ul>
       </div>
       <div class="product">
-        3. AICC - An AI-based quality assurance system for customer service (2018.07 - 2020.11)
+        <div class="product_info">
+          <div class="product_name">3. AICC - An AI-based quality assurance system for customer service </div>
+          <div class="product_time">2018.07 - 2020.11</div>
+        </div>
         <p>
           A system that allows users to write custom rules and upload call recordings to evaluate customer service performance. A rule is constructed from training keywords to writing logical semantics. Evaluation result is visualized in dialog-like interface with rule highlighting and recording play back features.
         </p>
@@ -49,9 +60,31 @@
 
 <script>
 export default {
+
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+.experience_company {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
+  .experience_company-name {
+    @include title;
+  }
+}
+
+.product {
+  margin: 10px 0px;
+  .product_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .product_name {
+      @include sub-title;
+    }
+
+  }
+}
 </style>
