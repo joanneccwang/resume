@@ -1,0 +1,49 @@
+{
+  "info": {
+    "my_name": "王敬嘉 Joanne Wang",
+    "position": "前端工程師"
+  },
+  "summary": "具四年工作經驗的前端工程師。以 Vue.js 為主要開發技術。熱衷於開發使用者友善的系統，並追求完成 pixel-perfect 的介面。",
+  "experience": {
+    "emotibot": {
+      "company": "竹間智能科技有限公司",
+      "summary1": "與設計師和 PM 密切合作，從build product from scratch to completion",
+      "summary2": "串接後端服務，包含 RESTful API 與 WebSocket API",
+      "summary3": "使用 Vue.js 與其生態系 包含：Vue-router、Vuex、Vue I18n 和 Element UI",
+      "includes": "參與產品包含：",
+
+      "AI_bot": {
+        "product": "1. 智能客服",
+        "summary": "回答客戶常見問題的智能客服對話介面，並提供真人客服後台，當客戶問題超出機器對話範疇時，可即時轉接至真人文字客服提供服務。",
+        "bullet1": "開發真人文字客服後台",
+        "bullet2": "為不同專案客製化 RWD 智能客服介面，裝置尺寸包含 PC、平板與手機尺寸",
+        "bullet3": "處理跨瀏覽器相容性問題。瀏覽器包含：Chrome 66+、Firefox 87+、Safari、IE11 和 Edge"
+      },
+
+      "voice_platform": {
+        "product": "2. 語音平台",
+        "summary": "讓使用者訓練與測試 ASR (語音辨識) 和 TTS (文字轉語音) 技術的平台。",
+        "bullet1": "開發使用 ASR 技術的逐字稿專案。支援：a. 即時語音辨識，使用者可錄音並即時獲得轉譯結果 b. 離線語音辨識，使用者可上傳音檔取得轉譯結果",
+        "bullet2": "使用 WebSocket API 開發即時 ASR 轉譯服務"
+      },
+
+      "AICC": {
+        "product": "3. 智能質檢",
+        "summary": "提供使用者建立質檢規則並上傳客服錄音來評估電話客服表現的智能檢測系統。質檢規則由訓練關鍵字到撰寫語意邏輯建立。錄音評估結果以對話形式呈現，包含規則 highlight 與錄音重播功能。",
+        "bullet1": "開發可重用組件，提供建立語義邏輯與呈現評估結果",
+        "bullet2": "使用多語系(i18n)，支援繁體中文與簡體中文介面",
+        "bullet3": "使用 Apache Echarts 視覺化客服表現"
+      }
+    }
+  },
+  "education": {
+    "NCKU": {
+      "school": "國立成功大學",
+      "degree": "資訊工程所，碩士"
+    },
+    "NTHU": {
+      "school": "國立清華大學",
+      "degree": "資訊工程學系，學士"
+    }
+  }
+}

@@ -1,15 +1,15 @@
 <template>
   <div id="info">
     <div id="info_basic">
-      <div id="basic_name">CHING-CHIA (JOANNE) WANG</div>
-      <div id="basic_position">FRONT-END DEVELOPER</div>
+      <div id="basic_name">{{ $t('info.my_name') }}</div>
+      <div id="basic_position">{{ $t('info.position') }}</div>
     </div>
     <div id="info_contacts">
       <div class="contact" id="contact_phone">PHONE: 0932-527712</div>
       <div class="contact" id="contact_mail">MAIL: joanneccwang@gmail.com</div>
       <div class="contact" id="contact_base">BASE: Taiwan</div>
       <div class="contact" id="contact_linkedin">LINKEDIN: https://www.linkedin.com/in/joannewang7/</div>
-      <div class="contact" id="contact_github">GITHUB: https://github.com/joanneccwang</div>
+      <div class="contact" id="contact_github">GITHUB: https://github.com/joanneccwang"</div>
       <div class="contact" id="contact_codepen">CODEPEN: https://codepen.io/joanneccwang</div>
     </div>
   </div>

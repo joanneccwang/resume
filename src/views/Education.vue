@@ -3,15 +3,15 @@
     <block-title>EDUCATION</block-title>
     <div class="education_degree">
       <div>
-        <div class="degree_school">National Cheng Kung University</div>
-        <div class="degree_degree">Master's Degree, Computer Science</div>
+        <div class="degree_school">{{ $t('education.NCKU.school') }}</div>
+        <div class="degree_degree">{{ $t('education.NCKU.degree') }}</div>
       </div>
       <div class="degree_year">2015 - 2017</div>
     </div>
     <div class="education_degree">
       <div>
-        <div class="degree_school">National Tsing Hua University</div>
-        <div class="degree_degree">Bachelor's Degree, Computer Science</div>
+        <div class="degree_school">{{ $t('education.NTHU.school') }}</div>
+        <div class="degree_degree">{{ $t('education.NTHU.degree') }}</div>
       </div>
       <div class="degree_year">2011 - 2015</div>
     </div>

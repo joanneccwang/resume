@@ -2,7 +2,7 @@
   <div id="summary">
     <block-title>OBJECTIVE</block-title>
     <div class="summary_content">
-      Front-End Developer with 4 years of experience. Specialized in building web applications with Vue.js. Keen on making pixel-perfect interface and passionate in developing user-friendly system.
+      {{ $t('summary') }}
     </div>
 
   </div>
