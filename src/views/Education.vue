@@ -2,14 +2,14 @@
   <div id="education">
     <block-title>EDUCATION</block-title>
     <div class="education_degree">
-      <div>
+      <div class="education_degree-block">
         <div class="degree_school">{{ $t('education.NCKU.school') }}</div>
         <div class="degree_degree">{{ $t('education.NCKU.degree') }}</div>
       </div>
       <div class="degree_year">2015 - 2017</div>
     </div>
     <div class="education_degree">
-      <div>
+      <div class="education_degree-block">
         <div class="degree_school">{{ $t('education.NTHU.school') }}</div>
         <div class="degree_degree">{{ $t('education.NTHU.degree') }}</div>
       </div>
@@ -35,13 +35,22 @@ export default {
       margin-bottom: 10px;
     }
 
+    .education_degree-block {
+      flex: 1 0 auto;
+      display: flex;
+      flex-direction: row;
+    }
+
     .degree_school {
       @include title;
+      flex: 0 0 300px;
     }
     .degree_degree {
       margin-top: 5px;
+      flex: 1 0 auto;
     }
     .degree-year {
+      flex: 0 0 auto;
       color: #666;
     }
   }
