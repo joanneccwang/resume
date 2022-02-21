@@ -24,6 +24,7 @@ export default {
 <style lang="scss">
 #resume {
   max-width: 794px; // A4
+  min-width: 794px;
   margin: 0 auto;
 }
 </style>

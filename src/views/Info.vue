@@ -5,12 +5,37 @@
       <div id="basic_position">{{ $t('info.position') }}</div>
     </div>
     <div id="info_contacts">
-      <div class="contact" id="contact_phone">PHONE: 0932-527712</div>
-      <div class="contact" id="contact_mail">MAIL: joanneccwang@gmail.com</div>
-      <div class="contact" id="contact_base">BASE: Taiwan</div>
-      <div class="contact" id="contact_linkedin">LINKEDIN: https://www.linkedin.com/in/joannewang7/</div>
-      <div class="contact" id="contact_github">GITHUB: https://github.com/joanneccwang"</div>
-      <div class="contact" id="contact_codepen">CODEPEN: https://codepen.io/joanneccwang</div>
+      <div class="info_contacts-block">
+        <div class="contact" id="contact_phone">
+          <font-awesome-icon icon="mobile-screen-button" />
+          0932-527712
+        </div>
+        <div class="contact" id="contact_mail">
+          <font-awesome-icon icon="envelope" />
+          joanneccwang@gmail.com
+        </div>
+        <div class="contact" id="contact_base">
+          <font-awesome-icon icon="location-dot" />
+          Taiwan
+        </div>
+      </div>
+      <div class="info_contacts-block">
+        <a class="contact" id="contact_linkedin"
+          href="https://www.linkedin.com/in/joannewang7/" target="_linkedin">
+          <font-awesome-icon :icon="['fab', 'linkedin']" />
+          linkedin.com/in/joannewang7
+        </a>
+        <a class="contact" id="contact_github"
+          href="https://github.com/joanneccwang" target="_github">
+          <font-awesome-icon :icon="['fab', 'github']" />
+          github.com/joanneccwang
+        </a>
+        <a class="contact" id="contact_codepen"
+          href="https://codepen.io/joanneccwang" target="_codepen">
+          <font-awesome-icon :icon="['fab', 'codepen']" />
+          codepen.io/joanneccwang
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -23,7 +48,7 @@ export default {
 
 <style lang="scss">
 #info_basic {
-  margin: 20px 0px;
+  margin: 15px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,8 +72,21 @@ export default {
   justify-content: center;
 
   font-size: 14px;
+  .info_contacts-block {
+    display: flex;
+    flex-direction: row;
+    margin: 3px 0px;
+  }
   .contact {
     margin: 0px 20px;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  a:visited {
+    color: black;
   }
 }
 </style>
