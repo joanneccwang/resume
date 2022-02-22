@@ -43,7 +43,6 @@ export default {
 
     .degree_school {
       @include title;
-      flex: 0 0 300px;
     }
     .degree_degree {
       margin-top: 5px;
@@ -52,6 +51,17 @@ export default {
     .degree-year {
       flex: 0 0 auto;
       color: #666;
+    }
+  }
+
+  [lang=en] {
+    .degree_school {
+      flex: 0 0 300px;
+    }
+  }
+  [lang=zhtw] {
+    .degree_school {
+      flex: 0 0 150px;
     }
   }
 </style>

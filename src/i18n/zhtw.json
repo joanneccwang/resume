@@ -39,11 +39,11 @@
   "education": {
     "NCKU": {
       "school": "國立成功大學",
-      "degree": "資訊工程所，碩士"
+      "degree": "資訊工程所碩士"
     },
     "NTHU": {
       "school": "國立清華大學",
-      "degree": "資訊工程學系，學士"
+      "degree": "資訊工程學系學士"
     }
   }
 }

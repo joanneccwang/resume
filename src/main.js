@@ -4,7 +4,9 @@ import i18n from '@/i18n';
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core';
 /* import specific icons */
-import { faMobileScreenButton, faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import {
+  faMobileScreenButton, faEnvelope, faLocationDot, faLanguage,
+} from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub, faCodepen } from '@fortawesome/free-brands-svg-icons';
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
@@ -14,7 +16,7 @@ import App from './App.vue';
 
 /* add icons to the library */
 library.add(
-  faMobileScreenButton, faEnvelope, faLocationDot,
+  faMobileScreenButton, faEnvelope, faLocationDot, faLanguage,
   faLinkedin, faGithub, faCodepen,
 );
 

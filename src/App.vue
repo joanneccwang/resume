@@ -1,5 +1,7 @@
 <template>
   <div id="resume">
+    <font-awesome-icon icon="language"
+      id="i18n-button" @click="changeLanguage"/>
     <Info/>
     <Summary/>
     <Experience/>
@@ -19,6 +21,14 @@ export default {
     Education,
     Summary,
   },
+
+  methods: {
+    changeLanguage() {
+      console.log(this.$i18n.locale);
+      this.$i18n.locale = (this.$i18n.locale === 'zhtw') ? 'en' : 'zhtw';
+      document.documentElement.lang = this.$i18n.locale;
+    },
+  },
 };
 </script>
 <style lang="scss">
@@ -26,5 +36,13 @@ export default {
   max-width: 794px; // A4
   min-width: 794px;
   margin: 0 auto;
+}
+
+#i18n-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  height: 30px;
+  cursor: pointer;
 }
 </style>
