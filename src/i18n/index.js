@@ -3,7 +3,7 @@ import zhtw from './zhtw.json';
 import en from './en.json';
 
 const i18n = createI18n({
-  locale: 'en',
+  locale: 'zhtw',
   fallback: 'zhtw',
   messages: {
     zhtw,

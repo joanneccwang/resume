@@ -61,7 +61,7 @@ export default {
               bullets: ['1', '2', '3', '4', '5'],
             },
             {
-              name: 'bot_factory', // 智能質檢
+              name: 'bot_factory', // Bot Factory
               time: '2017.12 - 2018.07',
               bullets: ['1', '2', '3'],
             },
