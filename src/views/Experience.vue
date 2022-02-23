@@ -1,66 +1,75 @@
 <template>
   <div id="experience">
     <block-title>EXPERIENCE</block-title>
+    <template v-for="company in companys" :key="company.key">
     <div class="experience_company">
-      <div class="experience_company-name">{{ $t('experience.emotibot.company') }}</div>
-      <div class="experience_time">Dec 2017 - Nov 2021</div>
+      <div class="experience_company-name">{{ this.$t(`experience.${company.key}.company`) }}</div>
+      <div class="experience_time">{{ company.time }}</div>
     </div>
     <div class="experience_content">
       <ul>
-        <li>{{ $t('experience.emotibot.summary1') }}</li>
-        <li>{{ $t('experience.emotibot.summary2') }}</li>
-        <li>{{ $t('experience.emotibot.summary3') }}</li>
+        <li v-for="(summaryKey, sIdx) in company.summary"
+          :key="`${company.key}-summary-${sIdx}`">
+          {{ this.$t(`experience.${company.key}.summary${summaryKey}`) }}
+        </li>
       </ul>
 
       {{ $t('experience.emotibot.includes') }}
-      <div class="product">
+      <div class="product" v-for="(product, pIdx) in company.products" :key="product.name">
         <div class="product_info">
-          <div class="product_name">{{ $t('experience.emotibot.AI_bot.product') }}</div>
-          <div class="product_time">2020.11 - 2021.11</div>
+          <div class="product_name">
+            {{pIdx + 1}}. {{ $t(`experience.${company.key}.${product.name}.product`) }}
+          </div>
+          <div class="product_time">{{ product.time }}</div>
         </div>
-        <p>
-          {{ $t('experience.emotibot.AI_bot.summary') }}
-        </p>
+        <p> {{ $t(`experience.${company.key}.${product.name}.summary`) }} </p>
         <ul>
-          <li>{{ $t('experience.emotibot.AI_bot.bullet1') }}</li>
-          <li>{{ $t('experience.emotibot.AI_bot.bullet2') }}</li>
-          <li>{{ $t('experience.emotibot.AI_bot.bullet3') }}</li>
-        </ul>
-      </div>
-      <div class="product">
-        <div class="product_info">
-          <div class="product_name">{{ $t('experience.emotibot.voice_platform.product') }}</div>
-          <div class="product_time">2021.01 - 2021.11</div>
-        </div>
-        <p>
-          {{ $t('experience.emotibot.voice_platform.summary') }}
-        </p>
-        <ul>
-          <li>{{ $t('experience.emotibot.voice_platform.bullet1') }}</li>
-          <li>{{ $t('experience.emotibot.voice_platform.bullet2') }}</li>
-        </ul>
-      </div>
-      <div class="product">
-        <div class="product_info">
-          <div class="product_name">{{ $t('experience.emotibot.AICC.product') }}</div>
-          <div class="product_time">2018.07 - 2020.11</div>
-        </div>
-        <p>
-          {{ $t('experience.emotibot.AICC.summary') }}
-        </p>
-        <ul>
-          <li>{{ $t('experience.emotibot.AICC.bullet1') }}</li>
-          <li>{{ $t('experience.emotibot.AICC.bullet2') }}</li>
-          <li>{{ $t('experience.emotibot.AICC.bullet3') }}</li>
+          <li v-for="(bulletKey, idx) in product.bullets"
+            :key="`${product.name}-bullet-${idx}`">
+            {{ $t(`experience.${company.key}.${product.name}.bullet${bulletKey}`) }}
+          </li>
         </ul>
       </div>
     </div>
+    </template>
   </div>
 </template>
 
 <script>
 export default {
-
+  data() {
+    return {
+      companys: [
+        {
+          key: 'emotibot',
+          time: 'Dec 2017 - Nov 2021',
+          summary: ['1', '2', '3', '4'],
+          products: [
+            {
+              name: 'AI_bot', // 智能客服
+              time: '2020.11 - 2021.11',
+              bullets: ['1', '2', '3'],
+            },
+            {
+              name: 'voice_platform', // 語音平台
+              time: '2021.01 - 2021.11',
+              bullets: ['1', '2'],
+            },
+            {
+              name: 'AICC', // 智能質檢
+              time: '2018.07 - 2020.11',
+              bullets: ['1', '2', '3', '4', '5'],
+            },
+            {
+              name: 'bot_factory', // 智能質檢
+              time: '2017.12 - 2018.07',
+              bullets: ['1', '2', '3'],
+            },
+          ],
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -84,7 +93,6 @@ export default {
     .product_name {
       @include sub-title;
     }
-
   }
 }
 </style>
