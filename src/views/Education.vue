@@ -35,6 +35,11 @@ export default {
       margin-bottom: 10px;
     }
 
+    @include mobile {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
     .education_degree-block {
       flex: 1 0 auto;
       display: flex;

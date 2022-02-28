@@ -7,32 +7,32 @@
     <div id="info_contacts">
       <div class="info_contacts-block">
         <div class="contact" id="contact_phone">
-          <font-awesome-icon icon="mobile-screen-button" />
+          <font-awesome-icon class="fa-icon" icon="mobile-screen-button" />
           0932-527712
         </div>
         <div class="contact" id="contact_mail">
-          <font-awesome-icon icon="envelope" />
+          <font-awesome-icon class="fa-icon" icon="envelope" />
           joanneccwang[at]gmail.com
         </div>
         <div class="contact" id="contact_base">
-          <font-awesome-icon icon="location-dot" />
+          <font-awesome-icon class="fa-icon" icon="location-dot" />
           Taiwan
         </div>
       </div>
       <div class="info_contacts-block">
         <a class="contact" id="contact_linkedin"
           href="https://www.linkedin.com/in/joannewang7/" target="_linkedin">
-          <font-awesome-icon :icon="['fab', 'linkedin']" />
+          <font-awesome-icon class="fa-icon" :icon="['fab', 'linkedin']" />
           linkedin.com/in/joannewang7
         </a>
         <a class="contact" id="contact_github"
           href="https://github.com/joanneccwang" target="_github">
-          <font-awesome-icon :icon="['fab', 'github']" />
+          <font-awesome-icon class="fa-icon" :icon="['fab', 'github']" />
           github.com/joanneccwang
         </a>
         <a class="contact" id="contact_codepen"
           href="https://codepen.io/joanneccwang" target="_codepen">
-          <font-awesome-icon :icon="['fab', 'codepen']" />
+          <font-awesome-icon class="fa-icon" :icon="['fab', 'codepen']" />
           codepen.io/joanneccwang
         </a>
       </div>
@@ -71,14 +71,25 @@ export default {
   align-items: center;
   justify-content: center;
 
+  @include mobile {
+    justify-content: flex-start;
+  }
   font-size: 14px;
   .info_contacts-block {
     display: flex;
     flex-direction: row;
     margin: 3px 0px;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
   .contact {
     margin: 0px 20px;
+    .fa-icon{
+      width: 20px;
+    }
   }
 
   a {

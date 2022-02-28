@@ -99,6 +99,7 @@ export default {
   display: flex;
   flex-direction: row;
   line-height: 20px;
+
   .product_time {
     flex: 0 0 80px;
     color: $color-font-mark;
@@ -114,6 +115,19 @@ export default {
     }
     .product_summary {
       margin: 5px 0px;
+    }
+  }
+
+  @include mobile {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .product_time {
+      flex: 0 0 auto;
+      margin-bottom: 5px;
+    }
+    .product_info {
+      flex: 1 0 auto;
     }
   }
 }

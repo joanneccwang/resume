@@ -1,6 +1,8 @@
 $color-font-strong: #333;
 $color-font-mark: #666;
 
+$phone-max-width: 414px;
+
 @mixin title() {
   font-size: 20px;
   font-weight: bold;
@@ -12,3 +14,17 @@ $color-font-mark: #666;
   font-weight: bold;
   color: $color-font-strong;
 }
+
+// PC first
+@mixin mobile {
+  @media(max-width: $phone-max-width){
+    @content;
+  }
+}
+
+
+// .some-div {
+//   @include pc {
+//     // do something in mobile layout
+//   }
+// }

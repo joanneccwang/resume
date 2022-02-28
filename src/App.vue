@@ -37,8 +37,14 @@ export default {
 <style lang="scss">
 #resume {
   max-width: 794px; // A4
-  min-width: 794px;
+  width: 100%;
   margin: 0 auto;
+  padding: 20px 20px;
+
+  @include mobile {
+    width: 100%;
+    padding: 10px 15px;
+  }
 }
 
 #i18n-button {
