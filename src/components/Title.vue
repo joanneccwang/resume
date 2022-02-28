@@ -18,6 +18,7 @@ export default {
 
   hr {
     margin: 5px 0px;
+    background: $color-font-mark;
   }
 }
 </style>

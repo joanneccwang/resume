@@ -14,21 +14,21 @@
         </li>
       </ul>
 
-      {{ $t('experience.emotibot.includes') }}
-      <div class="product" v-for="(product, pIdx) in company.products" :key="product.name">
+      <p>{{ $t('experience.emotibot.includes') }}</p>
+      <div class="product" v-for="(product) in company.products" :key="product.name">
+        <div class="product_time">{{ product.time }}</div>
         <div class="product_info">
           <div class="product_name">
-            {{pIdx + 1}}. {{ $t(`experience.${company.key}.${product.name}.product`) }}
+            {{ $t(`experience.${company.key}.${product.name}.product`) }}
           </div>
-          <div class="product_time">{{ product.time }}</div>
+          <p class="product_summary"> {{ $t(`experience.${company.key}.${product.name}.summary`) }} </p>
+          <ul>
+            <li v-for="(bulletKey, idx) in product.bullets"
+              :key="`${product.name}-bullet-${idx}`">
+              {{ $t(`experience.${company.key}.${product.name}.bullet${bulletKey}`) }}
+            </li>
+          </ul>
         </div>
-        <p> {{ $t(`experience.${company.key}.${product.name}.summary`) }} </p>
-        <ul>
-          <li v-for="(bulletKey, idx) in product.bullets"
-            :key="`${product.name}-bullet-${idx}`">
-            {{ $t(`experience.${company.key}.${product.name}.bullet${bulletKey}`) }}
-          </li>
-        </ul>
       </div>
     </div>
     </template>
@@ -74,24 +74,46 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+#experience {
+  display: flex;
+  flex-direction: column;
+}
 .experience_company {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
 
   .experience_company-name {
     @include title;
   }
+  .experience_time {
+    margin: 5px 0px;
+    color: $color-font-mark;
+  }
 }
 
 .product {
+  max-width: inherit;
   margin: 10px 0px;
+  display: flex;
+  flex-direction: row;
+  line-height: 20px;
+  .product_time {
+    flex: 0 0 80px;
+    color: $color-font-mark;
+
+  }
   .product_info {
+    flex: 1 1 auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     .product_name {
       @include sub-title;
+      margin-bottom: 3px;
+    }
+    .product_summary {
+      margin: 5px 0px;
     }
   }
 }

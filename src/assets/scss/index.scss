@@ -1,5 +1,17 @@
 @import 'variable.scss';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 
+body {
+  color: $color-font-strong;
+}
 ul {
-  padding-inline-start: 15px;
+  margin: 5px 0px;
+  padding-inline-start: 20px;
+}
+
+[lang=zhtw] {
+  font-family: 'Noto Sans TC','PingFang SC Regular', 'Microsoft JhengHei', 'Times New Roman', Arial, Helvetica, sans-serif;
+}
+[lang=en] {
+  font-family: 'Times New Roman', Arial, Helvetica, sans-serif;;
 }

@@ -29,6 +29,9 @@ export default {
       document.documentElement.lang = this.$i18n.locale;
     },
   },
+  beforeMount() {
+    document.documentElement.lang = this.$i18n.locale;
+  },
 };
 </script>
 <style lang="scss">
@@ -44,5 +47,6 @@ export default {
   right: 20px;
   height: 30px;
   cursor: pointer;
+  filter: drop-shadow(5px 8px 10px #999);
 }
 </style>

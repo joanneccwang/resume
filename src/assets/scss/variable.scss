@@ -1,9 +1,14 @@
+$color-font-strong: #333;
+$color-font-mark: #666;
+
 @mixin title() {
   font-size: 20px;
   font-weight: bold;
+  color: $color-font-strong;
 }
 
 @mixin sub-title() {
   font-size: 16px;
   font-weight: bold;
+  color: $color-font-strong;
 }
