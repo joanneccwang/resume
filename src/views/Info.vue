@@ -12,7 +12,7 @@
         </div>
         <div class="contact" id="contact_mail">
           <font-awesome-icon icon="envelope" />
-          joanneccwang@gmail.com
+          joanneccwang[at]gmail.com
         </div>
         <div class="contact" id="contact_base">
           <font-awesome-icon icon="location-dot" />
