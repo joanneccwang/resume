@@ -1,7 +1,7 @@
 $color-font-strong: #333;
 $color-font-mark: #666;
 
-$phone-max-width: 414px;
+$phone-max-width: 450px;
 
 @mixin title() {
   font-size: 20px;
@@ -22,9 +22,6 @@ $phone-max-width: 414px;
   }
 }
 
-
-// .some-div {
-//   @include pc {
-//     // do something in mobile layout
-//   }
-// }
+:export {
+  phoneMaxWidth: $phone-max-width;
+}

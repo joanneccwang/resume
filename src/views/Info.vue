@@ -19,21 +19,21 @@
           Taiwan
         </div>
       </div>
-      <div class="info_contacts-block">
+      <div id="info_contacts_social" class="info_contacts-block">
         <a class="contact" id="contact_linkedin"
           href="https://www.linkedin.com/in/joannewang7/" target="_linkedin">
-          <font-awesome-icon class="fa-icon" :icon="['fab', 'linkedin']" />
-          linkedin.com/in/joannewang7
+          <font-awesome-icon class="fa-icon" :class="{'fa-2xl': isMobile}" :icon="['fab', 'linkedin']" />
+          <template v-if="!isMobile">linkedin.com/in/joannewang7</template>
         </a>
         <a class="contact" id="contact_github"
           href="https://github.com/joanneccwang" target="_github">
-          <font-awesome-icon class="fa-icon" :icon="['fab', 'github']" />
-          github.com/joanneccwang
+          <font-awesome-icon class="fa-icon" :class="{'fa-2xl': isMobile}" :icon="['fab', 'github']" />
+          <template v-if="!isMobile">github.com/joanneccwang</template>
         </a>
         <a class="contact" id="contact_codepen"
           href="https://codepen.io/joanneccwang" target="_codepen">
-          <font-awesome-icon class="fa-icon" :icon="['fab', 'codepen']" />
-          codepen.io/joanneccwang
+          <font-awesome-icon class="fa-icon" :class="{'fa-2xl': isMobile}" :icon="['fab', 'codepen']" />
+          <template v-if="!isMobile">codepen.io/joanneccwang</template>
         </a>
       </div>
     </div>
@@ -41,8 +41,30 @@
 </template>
 
 <script>
-export default {
+import scssVars from '@/assets/scss/variable.scss';
 
+export default {
+  data() {
+    return {
+      isMobile: false,
+    };
+  },
+  methods: {
+    checkIsMobile() {
+      console.log('hello?');
+      const phoneMaxWidth = parseInt(scssVars.phoneMaxWidth.slice(0, -2), 10);
+      const windowWidth = document.body.clientWidth;
+      console.log(phoneMaxWidth, windowWidth);
+      this.isMobile = windowWidth <= phoneMaxWidth;
+    },
+  },
+
+  mounted() {
+    window.addEventListener('resize', this.checkIsMobile);
+  },
+  beforeUnmount() {
+    window.removeEventListener('resize', this.checkIsMobile);
+  },
 };
 </script>
 
@@ -63,6 +85,15 @@ export default {
     font-weight: 600;
     margin-top: 10px;
   }
+
+  @include mobile {
+    #basic_name {
+      font-size: 22px;
+    }
+    #basic_position {
+      font-size: 20px;
+    }
+  }
 }
 #info_contacts {
   display: flex;
@@ -71,9 +102,6 @@ export default {
   align-items: center;
   justify-content: center;
 
-  @include mobile {
-    justify-content: flex-start;
-  }
   font-size: 14px;
   .info_contacts-block {
     display: flex;
@@ -82,7 +110,11 @@ export default {
 
     @include mobile {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
+
+      &#info_contacts_social {
+        flex-direction: row;
+      }
     }
   }
   .contact {

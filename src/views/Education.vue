@@ -60,8 +60,18 @@ export default {
   }
 
   [lang=en] {
-    .degree_school {
-      flex: 0 0 300px;
+    .education_degree-block {
+      .degree_school {
+        flex: 0 0 300px;
+      }
+      @include mobile {
+        flex-direction: column;
+        margin-bottom: 5px;
+        .degree_school {
+          flex: 0 0 auto;
+        }
+      }
+
     }
   }
   [lang=zhtw] {
