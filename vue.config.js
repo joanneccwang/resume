@@ -8,4 +8,8 @@ module.exports = {
       },
     },
   },
+  devServer: {
+    compress: true,
+    disableHostCheck: true, // webpack4.0 open hot update
+  },
 };
