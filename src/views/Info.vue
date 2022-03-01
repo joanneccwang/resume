@@ -51,15 +51,14 @@ export default {
   },
   methods: {
     checkIsMobile() {
-      console.log('hello?');
       const phoneMaxWidth = parseInt(scssVars.phoneMaxWidth.slice(0, -2), 10);
       const windowWidth = document.body.clientWidth;
-      console.log(phoneMaxWidth, windowWidth);
       this.isMobile = windowWidth <= phoneMaxWidth;
     },
   },
 
   mounted() {
+    this.checkIsMobile();
     window.addEventListener('resize', this.checkIsMobile);
   },
   beforeUnmount() {
