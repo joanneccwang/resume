@@ -31,6 +31,8 @@ export default {
   },
   beforeMount() {
     document.documentElement.lang = this.$i18n.locale;
+    document.title = 'Joanne Wang';
+    document.querySelector('meta[name="description"]').setAttribute('content', 'Hi! I\'m Joanne Wang. A frontend developer with 4 years of experience.');
   },
 };
 </script>
