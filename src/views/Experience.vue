@@ -15,28 +15,36 @@
       </ul>
 
       <p>{{ $t('experience.emotibot.includes') }}</p>
-      <div class="product" v-for="(product) in company.products" :key="product.name">
-        <div class="product_time">{{ product.time }}</div>
-        <div class="product_info">
-          <div class="product_name">
-            {{ $t(`experience.${company.key}.${product.name}.product`) }}
+      <template v-for="(product) in company.products" :key="product.name">
+        <div class="product">
+          <div class="product_time">{{ product.time }}</div>
+          <div class="product_info">
+            <div class="product_name">
+              {{ $t(`experience.${company.key}.${product.name}.product`) }}
+            </div>
+            <p class="product_summary"> {{ $t(`experience.${company.key}.${product.name}.summary`) }} </p>
+            <ul>
+              <li v-for="(bulletKey, idx) in product.bullets"
+                :key="`${product.name}-bullet-${idx}`">
+                {{ $t(`experience.${company.key}.${product.name}.bullet${bulletKey}`) }}
+              </li>
+            </ul>
           </div>
-          <p class="product_summary"> {{ $t(`experience.${company.key}.${product.name}.summary`) }} </p>
-          <ul>
-            <li v-for="(bulletKey, idx) in product.bullets"
-              :key="`${product.name}-bullet-${idx}`">
-              {{ $t(`experience.${company.key}.${product.name}.bullet${bulletKey}`) }}
-            </li>
-          </ul>
         </div>
-      </div>
+        <panel></panel>
+      </template>
     </div>
     </template>
   </div>
 </template>
 
 <script>
+import Panel from '@/components/Panel.vue';
+
 export default {
+  components: {
+    Panel,
+  },
   data() {
     return {
       companys: [
