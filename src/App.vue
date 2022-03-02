@@ -28,11 +28,18 @@ export default {
       this.$i18n.locale = (this.$i18n.locale === 'zhtw') ? 'en' : 'zhtw';
       document.documentElement.lang = this.$i18n.locale;
     },
+    createMeta(property, content) {
+      console.log('hello meta');
+      const link = document.createElement('meta');
+      link.setAttribute('property', property);
+      link.content = content;
+      document.getElementsByTagName('head')[0].appendChild(link);
+    },
   },
   beforeMount() {
     document.documentElement.lang = this.$i18n.locale;
-    document.title = 'Joanne Wang';
-    document.querySelector('meta[name="description"]').setAttribute('content', 'Hi! I\'m Joanne Wang. A frontend developer with 4 years of experience.');
+    // document.title = 'Joanne Wang';
+    this.createMeta('description', 'Hi! I\'m Joanne Wang. A frontend developer with 4 years of experience.');
   },
 };
 </script>
