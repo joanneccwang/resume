@@ -31,7 +31,7 @@
             </ul>
           </div>
         </div>
-        <panel></panel>
+        <panel v-if="product.imgs && product.imgs.length > 0" :imgs="product.imgs"></panel>
       </template>
     </div>
     </template>
@@ -40,6 +40,14 @@
 
 <script>
 import Panel from '@/components/Panel.vue';
+import imgEasycard01 from '@/assets/imgs/easycard_01.svg';
+import imgEasycard02 from '@/assets/imgs/easycard_02.svg';
+import imgKgi01 from '@/assets/imgs/kgi_01.svg';
+import imgKgi02 from '@/assets/imgs/kgi_02.svg';
+import imgAICC01 from '@/assets/imgs/aicc_01.svg';
+import imgAICC02 from '@/assets/imgs/aicc_02.svg';
+import imgAICC03 from '@/assets/imgs/aicc_03.svg';
+import imgAICC04 from '@/assets/imgs/aicc_04.svg';
 
 export default {
   components: {
@@ -57,6 +65,7 @@ export default {
               name: 'AI_bot', // 智能客服
               time: '2020.11 - 2021.11',
               bullets: ['1', '2', '3'],
+              imgs: [imgEasycard01, imgEasycard02, imgKgi01, imgKgi02],
             },
             {
               name: 'voice_platform', // 語音平台
@@ -67,6 +76,7 @@ export default {
               name: 'AICC', // 智能質檢
               time: '2018.07 - 2020.11',
               bullets: ['1', '2', '3', '4', '5'],
+              imgs: [imgAICC01, imgAICC02, imgAICC03, imgAICC04],
             },
             {
               name: 'bot_factory', // Bot Factory

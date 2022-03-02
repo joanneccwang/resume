@@ -1,10 +1,7 @@
 <template>
   <div class="panel">
     <template v-if="show">
-      <p>hello panel</p>
-      <p>hello panel</p>
-      <p>hello panel</p>
-      <slot></slot>
+      <img v-for="(img, idx) in imgs" :key="idx" :src="img"/>
     </template>
     <div class="panel-btn" @click="show = !show">
       <font-awesome-icon class="expand-icon" :class="{expand: show}" icon="caret-down" />
@@ -15,9 +12,21 @@
 
 <script>
 export default {
+  props: {
+    imgs: {
+      type: Array,
+      required: true,
+      default() {
+        return [];
+      },
+    },
+  },
   data() {
     return {
       show: false,
+
+      // eslint-disable-next-line global-require
+      imgPath: require('@/assets/imgs/easycard_01.svg'),
     };
   },
 };
