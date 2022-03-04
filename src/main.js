@@ -5,7 +5,8 @@ import i18n from '@/i18n';
 import { library } from '@fortawesome/fontawesome-svg-core';
 /* import specific icons */
 import {
-  faMobileScreenButton, faEnvelope, faLocationDot, faLanguage, faCaretDown,
+  faMobileScreenButton, faEnvelope, faLocationDot, faLanguage,
+  faCaretDown, faSquareUpRight,
 } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub, faCodepen } from '@fortawesome/free-brands-svg-icons';
 /* import font awesome icon component */
@@ -17,7 +18,7 @@ import App from './App.vue';
 /* add icons to the library */
 library.add(
   faMobileScreenButton, faEnvelope, faLocationDot, faLanguage,
-  faCaretDown,
+  faCaretDown, faSquareUpRight,
   faLinkedin, faGithub, faCodepen,
 );
 

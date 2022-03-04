@@ -29,8 +29,18 @@
                 {{ $t(`experience.${company.key}.${product.name}.bullet${bulletKey}`) }}
               </li>
             </ul>
+            <div v-if="product.links && product.links.length > 0" class="product_link">
+              <div v-for="(link, lIdx) in product.links" :key="`${product.name}-link-${lIdx}`">
+                <font-awesome-icon icon="square-up-right" />
+                <a :href="link.href" :target="`_${link.key}`">
+                  {{ $t(`experience.${company.key}.${product.name}.link.${link.key}`) }}
+                </a>
+              </div>
+            </div>
           </div>
+
         </div>
+
         <panel v-if="product.imgs && product.imgs.length > 0" :imgs="product.imgs"></panel>
       </template>
     </div>
@@ -66,6 +76,10 @@ export default {
               time: '2020.11 - 2021.11',
               bullets: ['1', '2', '3'],
               imgs: [imgEasycard01, imgEasycard02, imgKgi01, imgKgi02],
+              links: [
+                { key: 'easycard', href: 'https://chatbot.easycard.com.tw/chatbot/#/robotchat' },
+                { key: 'kgi', href: 'https://aiservice.kgieworld.com.tw/#/robotchat' },
+              ],
             },
             {
               name: 'voice_platform', // 語音平台
@@ -133,6 +147,20 @@ export default {
     }
     .product_summary {
       margin: 5px 0px;
+    }
+    .product_link {
+      display: flex;
+      flex-direction: row;
+      :not(:last-child) {
+        margin-right: 10px;
+      }
+      a {
+        color: $color-chigusa;
+        text-decoration: none;
+      }
+      a:hover {
+        color: darken($color-chigusa, 10%);
+      }
     }
   }
 

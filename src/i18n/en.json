@@ -18,7 +18,11 @@
         "summary": "AI Chatbots for answering common customer question which also allow human customer service to take action when customer's questions are out of robot's scope.",
         "bullet1": "Customize chat bot web page for each project with RWD. Devices include PC, tablet and mobile",
         "bullet2": "Develop CMS system features for human customer service, including call-in, messages with multimedia, billboard management etc.",
-        "bullet3": "Handle cross-browser compatibility issues. Browsers include Chrome 66+, Firefox 87+, Safari, IE11 and Edge."
+        "bullet3": "Handle cross-browser compatibility issues. Browsers include Chrome 66+, Firefox 87+, Safari, IE11 and Edge.",
+        "link": {
+          "easycard": "Easycard AI Chatbot",
+          "kgi": "KGI Securities AI Chatbot"
+        }
       },
 
       "voice_platform": {
