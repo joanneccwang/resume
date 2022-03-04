@@ -1,8 +1,8 @@
 <template>
   <div class="panel">
-    <template v-if="show">
+    <div v-show="show">
       <img v-for="(img, idx) in imgs" :key="idx" :src="img"/>
-    </template>
+    </div>
     <div class="panel-btn" @click="show = !show">
       <font-awesome-icon class="expand-icon" :class="{expand: show}" icon="caret-down" />
       <div>Project Screenshots</div>
@@ -46,6 +46,7 @@ export default {
   .expand-icon {
     font-size: 14px;
     margin-right: 10px;
+    transition: transform .5s ease;
     &.expand {
       transform: rotate(180deg);
     }
