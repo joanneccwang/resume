@@ -1,5 +1,7 @@
 import { createApp } from 'vue';
+import router from '@/router';
 import i18n from '@/i18n';
+// import store from './store';
 
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -20,13 +22,11 @@ library.add(
   faLinkedin, faGithub, faCodepen,
 );
 
-// import router from './router';
-// import store from './store';
-
 const app = createApp(App);
 /* add font awesome icon component */
 app.component('font-awesome-icon', FontAwesomeIcon);
 app.component('block-title', Title);
-// app.use(store).use(router)
+// app.use(store)
+app.use(router);
 app.use(i18n);
 app.mount('#app');
