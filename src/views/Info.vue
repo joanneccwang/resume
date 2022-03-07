@@ -6,10 +6,10 @@
     </div>
     <div id="info_contacts">
       <div class="info_contacts-block">
-        <div class="contact" id="contact_phone">
+        <!-- <div class="contact" id="contact_phone">
           <font-awesome-icon class="fa-icon" icon="mobile-screen-button" />
           0932-527712
-        </div>
+        </div> -->
         <div class="contact" id="contact_mail">
           <font-awesome-icon class="fa-icon" icon="envelope" />
           joanneccwang[at]gmail.com
