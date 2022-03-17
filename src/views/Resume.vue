@@ -1,6 +1,6 @@
 <template>
   <div id="resume">
-    <img id="i18n-button" src="../assets/QR_web_resume_tw.png" style="height: 80px; width: auto"/>
+    <img id="i18n-button" src="../assets/QR_web_resume_en.png" style="height: 80px; width: auto"/>
     <!-- <font-awesome-icon icon="language"
       id="i18n-button" @click="changeLanguage"/> -->
     <Info/>
