@@ -16,7 +16,7 @@
 
       <p>{{ $t('experience.emotibot.includes') }}</p>
       <div class="product" v-for="(product) in company.products" :key="product.name">
-        <!-- <div class="product_time">{{ product.time }}</div> -->
+        <div class="product_time">{{ product.time }}</div>
         <div class="product_info">
           <div class="product_name">
             {{ $t(`experience.${company.key}.${product.name}.product`) }}
@@ -51,20 +51,20 @@ export default {
               bullets: ['1', '2', '3'],
             },
             {
+              name: 'voice_platform', // 語音平台
+              time: '2021.01 - 2021.11',
+              bullets: ['1', '2'],
+            },
+            {
               name: 'AICC', // 智能質檢
               time: '2018.07 - 2020.11',
               bullets: ['1', '2', '3', '4', '5'],
             },
             {
-              name: 'voice_platform', // 語音平台
-              time: '2021.01 - 2021.11',
-              bullets: ['1'], // '2'
+              name: 'bot_factory', // Bot Factory
+              time: '2017.12 - 2018.07',
+              bullets: ['1', '2', '3'],
             },
-            // {
-            //   name: 'bot_factory', // Bot Factory
-            //   time: '2017.12 - 2018.07',
-            //   bullets: ['1', '2', '3'],
-            // },
           ],
         },
       ],

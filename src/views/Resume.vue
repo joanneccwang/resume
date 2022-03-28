@@ -1,8 +1,7 @@
 <template>
   <div id="resume">
-    <img id="i18n-button" src="../assets/QR_web_resume_tw.png" style="height: 80px; width: auto"/>
-    <!-- <font-awesome-icon icon="language"
-      id="i18n-button" @click="changeLanguage"/> -->
+    <font-awesome-icon icon="language"
+      id="i18n-button" @click="changeLanguage"/>
     <Info/>
     <Summary/>
     <Experience/>
@@ -55,7 +54,7 @@ export default {
   max-width: 794px; // A4
   width: 100%;
   margin: 0 auto;
-  // padding: 20px 20px;
+  padding: 20px 20px;
 
   @include mobile {
     width: 100%;
@@ -65,10 +64,10 @@ export default {
 
 #i18n-button {
   position: fixed;
-  // top: 20px;
-  right: 0px;
-  // height: 30px;
-  // cursor: pointer;
-  // filter: drop-shadow(5px 8px 10px #999);
+  top: 20px;
+  right: 20px;
+  height: 30px;
+  cursor: pointer;
+  filter: drop-shadow(5px 8px 10px #999);
 }
 </style>

@@ -12,7 +12,7 @@
         </div> -->
         <div class="contact" id="contact_mail">
           <font-awesome-icon class="fa-icon" icon="envelope" />
-          joanneccwang@gmail.com
+          joanneccwang[at]gmail.com
         </div>
         <div class="contact" id="contact_base">
           <font-awesome-icon class="fa-icon" icon="location-dot" />
@@ -69,8 +69,7 @@ export default {
 
 <style lang="scss">
 #info_basic {
-  // margin: 15px 0px;
-  margin-bottom: 10px;
+  margin: 15px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,7 +82,7 @@ export default {
   #basic_position {
     font-size: 24px;
     font-weight: 600;
-    // margin-top: 10px;
+    margin-top: 10px;
   }
 
   @include mobile {
@@ -102,7 +101,7 @@ export default {
   align-items: center;
   justify-content: center;
 
-  font-size: 12px;
+  font-size: 14px;
   .info_contacts-block {
     display: flex;
     flex-direction: row;
