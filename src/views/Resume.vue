@@ -29,7 +29,7 @@ onBeforeMount(() => {
     locale.value = currentLang
   }
   document.documentElement.lang = locale.value
-  createMeta('description', "Hi! I'm Joanne Wang. A frontend developer with 4 years of experience.")
+  createMeta('description', "Hi! I'm Joanne Wang. A frontend developer with 6 years of experience.")
 })
 </script>
 
