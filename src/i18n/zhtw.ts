@@ -4,8 +4,29 @@ export default {
     position: '前端工程師'
   },
   summary:
-    '具四年工作經驗的前端工程師。目前以 Vue2 為主要開發技術。重視設計細節，追求完成友善使用者體驗且 pixel-perfect 的介面。',
+    '具六年工作經驗的前端工程師。目前以 Vue3 為主要開發技術。重視設計細節，追求完成友善使用者體驗且 pixel-perfect 的介面。',
   experience: {
+    binance: {
+      company: '幣安',
+      summary1: '負責兩個基於 Vue3 + tsx + CSS in JS 構建的內部 Web 應用，以增強數據團隊的工作效率',
+      summary2: '通過每兩周一次的 sprint 和每月一次的新版本發布，保持穩定的功能交付。',
+      summary3: '通過 strong typing、eslint 和 code review 來確保代碼品質',
+      summary4:
+        '使用：Vue3 及其生態系、TypeScript、JSX、Ant Design、ECharts、vue-draggable；其他工具：git、JIRA、Figma、Swagger/YApi',
+      includes: '參與產品包含：',
+      insight_platform: {
+        product: '數據洞察平台',
+        summary: '一個內部數據洞察平台，提供各種工具供數據和財務團隊在日常工作中使用。',
+        bullet1: '開發財務報表，包括具有生成 PDF 功能的高度客製化的可視化圖表（使用 ECharts）',
+        bullet2: '開發用戶友好的報表生成工具，使數據分析師可以通過拖放操作動態生成數據報表',
+        bullet3: '為嵌入的第三方數據平台應用 OAuth 添加 refresh token 機制，以提供更流暢的用戶體驗'
+      },
+      staff_platform: {
+        product: '員工入職平台',
+        summary: '一個供新員工快速申請內部工具與了解團隊的平台',
+        bullet1: '開發功能包括：平台 tour guide、首頁重構和使用 Antv X6 製作組織結構圖等'
+      }
+    },
     emotibot: {
       company: '竹間智能科技有限公司',
       summary1: '與工程團隊、設計師、PM 密切合作，以 SPA 模式開發中大型產品平台與專案 RWD 介面',

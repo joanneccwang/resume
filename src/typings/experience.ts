@@ -1,6 +1,6 @@
 interface Product {
   name: string
-  time: string
+  time?: string
   bullets: string[]
   imgs?: string[]
   links?: {

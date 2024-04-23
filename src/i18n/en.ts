@@ -4,8 +4,37 @@ export default {
     position: 'FRONTEND DEVELOPER'
   },
   summary:
-    'Front-End Developer with 4 years of experience. Specialized in building web applications with Vue.js. Keen on making pixel-perfect interface and passionate in developing user-friendly system.',
+    'Front-End Developer with 6 years of experience. Specialized in building web applications with Vue.js. Keen on making pixel-perfect interface and passionate in developing user-friendly system.',
   experience: {
+    binance: {
+      company: 'Binance',
+      summary1:
+        'Owner of two internal web applications build on Vue3 + tsx + CSS in JS to enhance working efficiency for the data team',
+      summary2:
+        'Maintain stable feature delivery through bi-weekly sprints and monthly releases of new versions.',
+      summary3: 'Ensure code quality through strongly typed coding, eslint, and team code reviews',
+      summary4:
+        'Experience in using: Vue3 and its ecosystems, TypeScript, JSX, Ant Design, ECharts, vue-draggable; Other daily tools: git, JIRA, Figma, Swagger/YApi',
+      includes: 'Products involved:',
+      insight_platform: {
+        product: 'A Data Insight Platform',
+        summary:
+          'An internal data insight platform with various tools for the data and finance team to use in their daily work. Some feature highlights:',
+        bullet1:
+          'Build financial dashboard including highly customized visualized charts with ECharts featuring a generate-to-PDF functionality',
+        bullet2:
+          "Develop user-friendly report generating tools enabling data analysts to dynamically generate data reports via drag n' drop actions",
+        bullet3:
+          'Apply OAuth refresh token mechanism to an embedded third-party data platform for smoother user experience '
+      },
+      staff_platform: {
+        product: 'A Staff Onboarding Platform',
+        summary:
+          'A platform for new employees to have quick access to internal tools and gain a brief understanding of the team',
+        bullet1:
+          'Develop features including interactive platform tour guide, landing page renewal and organization structure diagram using Antv X6'
+      }
+    },
     emotibot: {
       company: 'Emotibot Technologies Limited',
       summary1:

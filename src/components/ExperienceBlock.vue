@@ -30,7 +30,7 @@ defineProps({
 
       <Box v-for="product in company.products" :key="product.name">
         <Box class="product">
-          <Box class="product_time">{{ product.time }}</Box>
+          <Box v-if="product.time" class="product_time">{{ product.time }}</Box>
           <Box class="product_info">
             <Box class="product_name">
               {{ $t(`experience.${company.key}.${product.name}.product`) }}

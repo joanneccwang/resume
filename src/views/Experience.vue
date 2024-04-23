@@ -15,6 +15,21 @@ import imgAICC04 from '@/assets/imgs/aicc_04.svg'
 
 const companyList = ref<Company[]>([
   {
+    key: 'binance',
+    time: 'May 2022 - Nov 2023',
+    summary: ['1', '2', '3', '4'],
+    products: [
+      {
+        name: 'insight_platform', // 數據平台
+        bullets: ['1', '2', '3']
+      },
+      {
+        name: 'staff_platform', // 入職平台
+        bullets: ['1']
+      }
+    ]
+  },
+  {
     key: 'emotibot',
     time: 'Dec 2017 - Nov 2021',
     summary: ['1', '2', '3', '4'],
