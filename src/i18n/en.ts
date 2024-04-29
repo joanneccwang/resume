@@ -4,7 +4,7 @@ export default {
     position: 'FRONTEND DEVELOPER'
   },
   summary:
-    'Front-End Developer with 6 years of experience. Specialized in building web applications with Vue.js. Keen on making pixel-perfect interface and passionate in developing user-friendly system.',
+    'Front-End Developer with 6 years of experience. Proficiency in building web applications with Vue.js. Keen on making pixel-perfect interface and passionate in developing user-friendly system.',
   experience: {
     binance: {
       company: 'Binance',
