@@ -8,18 +8,20 @@ export default {
   experience: {
     binance: {
       company: '幣安',
-      summary1: '負責兩個基於 Vue3 + tsx + CSS in JS 構建的內部 Web 應用，以增強數據團隊的工作效率',
+      summary1: '負責兩個基於 Vue3 + tsx + CSS in JS 構建的內部 Web 應用，以提升數據團隊的工作效率',
       summary2: '通過每兩周一次的 sprint 和每月一次的新版本發布，保持穩定的功能交付。',
-      summary3: '通過 strong typing、eslint 和 code review 來確保代碼品質',
-      summary4:
+      summary3: '通過 strong typing、eslint 和 code review 來確保程式碼品質',
+      summary4: '與設計師、PM 密切合作，使用 Figma 根據需求設計詳細的功能',
+      summary5:
         '使用：Vue3 及其生態系、TypeScript、JSX、Ant Design、ECharts、vue-draggable；其他工具：git、JIRA、Figma、Swagger/YApi',
       includes: '參與產品包含：',
       insight_platform: {
         product: '數據洞察平台',
-        summary: '一個內部數據洞察平台，提供各種工具供數據和財務團隊在日常工作中使用。',
-        bullet1: '開發財務報表，包括具有生成 PDF 功能的高度客製化的可視化圖表（使用 ECharts）',
-        bullet2: '開發用戶友好的報表生成工具，使數據分析師可以通過拖放操作動態生成數據報表',
-        bullet3: '為嵌入的第三方數據平台應用 OAuth 添加 refresh token 機制，以提供更流暢的用戶體驗'
+        summary: '一個內部數據洞察平台，提供各種自助工具供數據和財務團隊在日常工作中使用。',
+        bullet1: '使用 ECharts 和 jspdf 開發視覺化的財務報表，包含可互動的堆疊圖表和生成 PDF 功能',
+        bullet2: '設計可複用且可擴展的元件來建構內部平台功能',
+        bullet3: '開發用戶友好的報表生成工具，使數據分析師可以通過拖放操作動態生成數據報表',
+        bullet4: '為嵌入的第三方數據平台應用 OAuth 添加 refresh token 機制，以提供更流暢的用戶體驗'
       },
       staff_platform: {
         product: '員工入職平台',

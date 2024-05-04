@@ -17,11 +17,11 @@ const companyList = ref<Company[]>([
   {
     key: 'binance',
     time: 'May 2022 - Nov 2023',
-    summary: ['1', '2', '3', '4'],
+    summary: ['1', '2', '3', '4', '5'],
     products: [
       {
         name: 'insight_platform', // 數據平台
-        bullets: ['1', '2', '3']
+        bullets: ['1', '2', '3', '4']
       },
       {
         name: 'staff_platform', // 入職平台

@@ -14,18 +14,22 @@ export default {
         'Maintain stable feature delivery through bi-weekly sprints and monthly releases of new versions.',
       summary3: 'Ensure code quality through strongly typed coding, eslint, and team code reviews',
       summary4:
+        'Work closely with designer and product managers to design elaborated features from requirements with Figma',
+      summary5:
         'Experience in using: Vue3 and its ecosystems, TypeScript, JSX, Ant Design, ECharts, vue-draggable; Other daily tools: git, JIRA, Figma, Swagger/YApi',
       includes: 'Products involved:',
       insight_platform: {
         product: 'A Data Insight Platform',
         summary:
-          'An internal data insight platform with various tools for the data and finance team to use in their daily work. Some feature highlights:',
+          'An internal data insight platform with various self-service tools for the data and finance team to use in their daily work. Some feature highlights:',
         bullet1:
-          'Build financial dashboard including highly customized visualized charts with ECharts featuring a generate-to-PDF functionality',
+          'Utilize ECharts and jspdf to build visualized financial dashboard which includes interactive stacked charts and generate-to-PDF functionalities',
         bullet2:
-          "Develop user-friendly report generating tools enabling data analysts to dynamically generate data reports via drag n' drop actions",
+          'Design highly reusable and extendable components to build features for internal platforms',
         bullet3:
-          'Apply OAuth refresh token mechanism to an embedded third-party data platform for smoother user experience '
+          "Develop user-friendly report generating tools enabling data analysts to dynamically generate data reports via drag n' drop actions",
+        bullet4:
+          'Apply OAuth refresh token mechanism to an embedded third-party data platform for smoother user experience'
       },
       staff_platform: {
         product: 'A Staff Onboarding Platform',
